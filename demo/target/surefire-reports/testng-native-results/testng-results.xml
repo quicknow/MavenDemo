@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="18392" started-at="2016-10-12T00:48:00Z" finished-at="2016-10-12T00:48:19Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="18392" started-at="2016-10-12T00:48:00Z" finished-at="2016-10-12T00:48:19Z">
+      <class name="TestModule1.TestBaidu">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestModule1.TestBaidu@79b4d0f]" name="setUp" is-config="true" duration-ms="5578" started-at="2016-10-12T08:48:00Z" finished-at="2016-10-12T08:48:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBaidu()[pri:0, instance:TestModule1.TestBaidu@79b4d0f]" name="testBaidu" duration-ms="3085" started-at="2016-10-12T08:48:06Z" finished-at="2016-10-12T08:48:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaidu -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestModule1.TestBaidu@79b4d0f]" name="tearDown" is-config="true" duration-ms="1673" started-at="2016-10-12T08:48:09Z" finished-at="2016-10-12T08:48:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestModule1.TestBaidu -->
+      <class name="com.test.demo.TestBaidu">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.demo.TestBaidu@6108b2d7]" name="setUp" is-config="true" duration-ms="4112" started-at="2016-10-12T08:48:10Z" finished-at="2016-10-12T08:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBaidu()[pri:0, instance:com.test.demo.TestBaidu@6108b2d7]" name="testBaidu" duration-ms="3277" started-at="2016-10-12T08:48:15Z" finished-at="2016-10-12T08:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaidu -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.demo.TestBaidu@6108b2d7]" name="tearDown" is-config="true" duration-ms="657" started-at="2016-10-12T08:48:18Z" finished-at="2016-10-12T08:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.demo.TestBaidu -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
