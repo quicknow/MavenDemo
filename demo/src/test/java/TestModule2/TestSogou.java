@@ -2,6 +2,7 @@ package TestModule2;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
@@ -9,13 +10,17 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import utils.Browsers;
+import utils.BrowsersType;
+
 public class TestSogou {
   private WebDriver driver;
   private String baseUrl;
 
   @BeforeClass
   public void setUp() throws Exception {
-    driver = new FirefoxDriver();
+	Browsers browser= new Browsers(BrowsersType.chrome);  
+    driver = browser.driver;
     baseUrl = "https://www.sogou.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }

@@ -1,0 +1,5 @@
+#surefire
+#Wed Oct 12 16:37:59 CST 2016
+user.dir=D\:\\TestMavenA\\demo
+localRepository=G\:\\m2\\respository
+basedir=D\:\\TestMavenA\\demo

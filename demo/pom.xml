@@ -14,6 +14,30 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
+<!--   使用xml运行 可以实现并发执行 -->
+<!--   <build> -->
+<!--       <plugins> -->
+<!--          <plugin>  -->
+<!--         	<artifactId>maven-surefire-plugin</artifactId> -->
+<!--         	<version>2.10</version> -->
+<!--         		<configuration> -->
+<!--         		    <excludes> -->
+<!--         		    	<exclude> -->
+<!--         		        	TestModule2/TestSogou.java -->
+<!--         		        	TestModule3/TestMutipleThreads.java -->
+<!--         		    	</exclude>    -->
+<!--         		    </excludes>     -->
+<!-- 		        	<sureXmlFiles> -->
+<!-- 						<sureXmlFile> -->
+<!-- 							${project.basedir}/src/test/java/TestModule1/TestBaidu.xml -->
+<!-- 						</sureXmlFile> -->
+<!-- 					</sureXmlFiles> -->
+<!-- 				</configuration> -->
+<!--         </plugin> -->
+<!-- 	  </plugins> -->
+<!--   </build>    -->
+
+<!--   使用xml多线程运行测试用例，不是并行而是并发，并发是指多线程运行，并行是指多线程中的程序同时运行 -->
   <build>
       <plugins>
          <plugin> 
@@ -22,24 +46,39 @@
         		<configuration>
         		    <excludes>
         		    	<exclude>
+        		    	    TestModule1/TestBaidu.java
         		        	TestModule2/TestSogou.java
         		    	</exclude>   
-        		    </excludes>    
+        		    </excludes> 
+        		    <parallel>methods</parallel>
+        		    <threadCount>2</threadCount>        		           
 		        	<sureXmlFiles>
 						<sureXmlFile>
-							${project.basedir}/src/test/java/TestModule1/TestBaidu.xml
+							${project.basedir}/src/test/java/TestModule3/TestMutipleThreads.xml
 						</sureXmlFile>
 					</sureXmlFiles>
+				</configuration>
+        </plugin>
+	  </plugins>
+  </build>   
+  
+<!--     <build> -->
+<!--       <plugins> -->
+<!--          <plugin>  -->
+<!--         	<artifactId>maven-surefire-plugin</artifactId> -->
+<!--         	<version>2.10</version> -->
+<!--         		<configuration> -->
 <!-- 					<includes> -->
 <!-- 						<include> -->
 <!-- 						      TestModule2/TestSogou.java -->
 <!-- 						</include> -->
 <!-- 					</includes> -->
-				</configuration>
-        </plugin>
-	  </plugins>
-  </build>   
-
+<!-- 				</configuration> -->
+<!--         </plugin> -->
+<!-- 	  </plugins> -->
+<!--   </build> -->
+  
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

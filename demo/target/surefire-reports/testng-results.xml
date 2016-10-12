@@ -1,25 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestModule1.TestBaidu" duration-ms="20878" started-at="2016-10-12T01:15:31Z" finished-at="2016-10-12T01:15:52Z">
+  <suite name="Command line suite" duration-ms="54918" started-at="2016-10-12T08:53:05Z" finished-at="2016-10-12T08:54:00Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="20878" started-at="2016-10-12T01:15:31Z" finished-at="2016-10-12T01:15:52Z">
-      <class name="TestModule1.TestBaidu">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestModule1.TestBaidu@522f46b8]" name="setUp" is-config="true" duration-ms="5500" started-at="2016-10-12T09:15:31Z" finished-at="2016-10-12T09:15:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testBaidu()[pri:0, instance:TestModule1.TestBaidu@522f46b8]" name="testBaidu" duration-ms="14034" started-at="2016-10-12T09:15:37Z" finished-at="2016-10-12T09:15:51Z">
+    <test name="Command line test" duration-ms="54918" started-at="2016-10-12T08:53:05Z" finished-at="2016-10-12T08:54:00Z">
+      <class name="TestModule3.TestMutipleThreads">
+        <test-method status="PASS" signature="testBaidu()[pri:0, instance:TestModule3.TestMutipleThreads@6997f7f4]" name="testBaidu" duration-ms="54908" started-at="2016-10-12T16:53:05Z" finished-at="2016-10-12T16:54:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBaidu -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestModule1.TestBaidu@522f46b8]" name="tearDown" is-config="true" duration-ms="1336" started-at="2016-10-12T09:15:51Z" finished-at="2016-10-12T09:15:52Z">
+      </class> <!-- TestModule3.TestMutipleThreads -->
+      <class name="TestModule1.TestBaidu">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestModule1.TestBaidu@53c5472f]" name="setUp" is-config="true" duration-ms="21933" started-at="2016-10-12T16:53:05Z" finished-at="2016-10-12T16:53:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBaidu()[pri:0, instance:TestModule1.TestBaidu@53c5472f]" name="testBaidu" duration-ms="3469" started-at="2016-10-12T16:53:27Z" finished-at="2016-10-12T16:53:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaidu -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestModule1.TestBaidu@53c5472f]" name="tearDown" is-config="true" duration-ms="2260" started-at="2016-10-12T16:53:31Z" finished-at="2016-10-12T16:53:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestModule1.TestBaidu -->
+      <class name="TestModule3.TestSogou">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestModule3.TestSogou@7817ea54]" name="setUp" is-config="true" duration-ms="1832" started-at="2016-10-12T16:53:47Z" finished-at="2016-10-12T16:53:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBaidu()[pri:0, instance:TestModule3.TestSogou@7817ea54]" name="testBaidu" duration-ms="6957" started-at="2016-10-12T16:53:49Z" finished-at="2016-10-12T16:53:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaidu -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestModule3.TestSogou@7817ea54]" name="tearDown" is-config="true" duration-ms="1813" started-at="2016-10-12T16:53:56Z" finished-at="2016-10-12T16:53:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestModule3.TestSogou -->
+      <class name="TestModule2.TestSogou">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestModule2.TestSogou@7d8bddf0]" name="setUp" is-config="true" duration-ms="2114" started-at="2016-10-12T16:53:33Z" finished-at="2016-10-12T16:53:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBaidu()[pri:0, instance:TestModule2.TestSogou@7d8bddf0]" name="testBaidu" duration-ms="9769" started-at="2016-10-12T16:53:35Z" finished-at="2016-10-12T16:53:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaidu -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestModule2.TestSogou@7d8bddf0]" name="tearDown" is-config="true" duration-ms="2276" started-at="2016-10-12T16:53:45Z" finished-at="2016-10-12T16:53:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestModule2.TestSogou -->
     </test> <!-- Command line test -->
-  </suite> <!-- TestModule1.TestBaidu -->
+  </suite> <!-- Command line suite -->
 </testng-results>

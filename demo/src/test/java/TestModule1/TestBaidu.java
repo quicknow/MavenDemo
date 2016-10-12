@@ -2,12 +2,16 @@ package TestModule1;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import utils.Browsers;
+import utils.BrowsersType;
+
 
 public class TestBaidu {
   private WebDriver driver;
@@ -15,7 +19,8 @@ public class TestBaidu {
 
   @BeforeClass
   public void setUp() throws Exception {
-    driver = new FirefoxDriver();
+	Browsers browser = new Browsers(BrowsersType.firefox);
+    driver = browser.driver;
     baseUrl = "https://www.baidu.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
